@@ -1,4 +1,4 @@
-# Hidden Markov Model project
+# Hidden Markov Model 
 This project is a demonstration of how to use Hidden Markov Models (HMMs) to predict the probability of a given word transitioning to the next word in a sentence. The code is written in Python and uses the `hmmlearn` library. 
 
 ## Getting Started 
@@ -26,8 +26,8 @@ It defines the number of hidden states and observable states, and trains the mod
 
 ## Toy Example 
 
-The code also includes a toy example that demonstrates how to use Hidden Markov Models. In this example, we have **7 hidden states** *('happy', 'sad', 'angry', 'surprised', 'calm', 'fearful' and 'disgusted')* that relate to the emotions.
-The observable states are the facial expressions *('smiling', 'frowning', 'neutral', 'grimacing', 'wide-eyed' and 'closed-eyes')*. 
+The code also includes a toy example that demonstrates how to use Hidden Markov Models. In this example, we have **5 hidden states** *('happy', 'sad', 'angry', 'calm' and 'disgusted')* that relate to the emotions.
+The observable states are the facial expressions *('smiling', 'frowning', 'grimacing', 'crying' and "neutral")*. 
 
 In this toy example we use the ``baum_welch`` algorithm to train the model. The ``baum_welch`` algorithm is an iterative algorithm that uses the forward-backward algorithm to calculate the probability of a given sequence of observations. 
 Then we use the ``viterbi`` algorithm to calculate the most likely sequence of hidden states that generated a sequence of observations from the transition and emission matrix that we calculated using the ``baum_welch`` algorithm. The start probability is defined as follow :
